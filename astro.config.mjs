@@ -7,7 +7,8 @@ export default defineConfig({
   output: "server",
   adapter: vercel({
     webAnalytics: {
-      enabled: true,
+    nodeMiddleware: true, 
+    runtime: 'nodejs20.x',
     },
   }),
 });
